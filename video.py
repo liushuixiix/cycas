@@ -24,20 +24,18 @@ def timer():
 t = timer()
 
 def videogen(fps):
-    # 读帧
     success, frame = videoCapture.read()
     receive = -1
     while success and receive == -1:
         receive = yield frame
         # print(t.__next__())
         for i in range(int(fps)):
-            success, frame = videoCapture.read()  # 获取下一帧
+            success, frame = videoCapture.read()
     else:
         yield None
-
 
 video = videogen(fps)
 img = video.send(None)
 while img is not None:
     cv2.imshow(wnd, img)
-    img = video.send(cv2.waitKey(1))
+    img = video.send(cv2.waitKey(1000))
