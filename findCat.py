@@ -45,6 +45,8 @@ def videoGen(vname, vstep=5):
     receive = -1
 
     while success and receive == -1:
+        if receive == 0:
+            pass
         receive = yield frame, curtime
         for i in range(int(vstep)):
             success, frame = videoCapture.read()

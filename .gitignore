@@ -1,7 +1,8 @@
-/.idea
+
 /.vscode
 /testpic
 /testvideo
 *.jpg
 *.pyc
 *.txt
+*.png

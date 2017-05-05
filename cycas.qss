@@ -1,0 +1,100 @@
+QWidget#MainWindow {
+		background: rgb(68, 69, 73);
+                
+        }
+QPushButton:!enabled{ 	
+		background: rgb(120, 170, 220);
+		color: black }
+QMenuBar{
+        background: rgb(57, 58, 60);
+        border: none;
+}
+QMenu{
+        border: 1px solid rgb(100, 100, 100);
+        background: rgb(68, 69, 73);
+}
+QMenuBar::item {
+        
+        background: transparent;
+}
+QMenuBar::item:enabled {
+        color: rgb(227, 234, 242);
+}
+QMenuBar::item:!enabled {
+        color: rgb(155, 155, 155);
+}
+QMenuBar::item:enabled:selected {
+        background: rgba(255, 255, 255, 40);
+}
+QPushButton{
+        border-radius: 4px;
+        border: 1px solid rgb(50, 50, 50);
+        width: 75px;
+        height: 25px;
+}
+QPushButton:enabled {
+        background: rgb(128,128,105);
+        color: white;
+}
+QPushButton:!enabled {
+        background: rgb(100, 100, 100);
+        color: rgb(200, 200, 200);
+}
+QPushButton:enabled:hover{
+        background: rgb(85, 85, 85);
+}
+QPushButton:enabled:pressed{
+        background: rgb(80, 80, 80);
+}
+QLabel#label_1
+{border-radius: 4px;
+		border: none;
+		background:rgb(0, 160, 230);
+        font-size: 12px;
+}
+QLabel#label_2
+{border-radius: 4px;
+		border: none;
+		background:rgb(0, 160, 230);
+        font-size: 12px;
+}
+QLabel#label_3
+{border-radius: 4px;
+		border: none;
+		background:rgb(0, 160, 230);
+        font-size: 12px;
+}
+QLabel#label_4
+{border-radius: 8px;
+		border: 1px solid rgb(50, 50, 50);
+		background:rgb(95, 95,95);
+        font-size: 12px;
+}
+QLabel#label
+{border-radius: 8px;
+		border: 1px solid rgb(50, 50, 50);
+		background:rgb(95, 95, 95);
+        font-size: 12px;
+}
+QLineEdit
+{border-radius: 8px;
+		border: 1px solid rgb(50, 50, 50);
+		background:rgb(95, 95, 95);
+        font-size: 12px;
+        color:rgb(255, 255, 255);
+}
+QLabel#label_5
+{		border: 1px solid rgb(50, 50, 50);
+		background:rgb(95, 95, 95);
+		color:rgb(255, 255, 255);
+}
+QDateEdit
+{		border: 1px solid rgb(50, 50, 50);
+		background:rgb(95, 95, 95);
+		color:rgb(255, 255, 255);
+}
+QTimeEdit
+{		border: 1px solid rgb(50, 50, 50);
+		background:rgb(95, 95, 95);
+		color:rgb(255, 255, 255);
+}
